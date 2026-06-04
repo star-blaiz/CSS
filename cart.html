@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Cart</title>
+    <style>
+        html, body{
+            height: 100%;
+            margin: 0;
+        }
+        body{
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+        }
+        p{
+            flex: 1;
+        }
+        .nav {
+ background-color: rgb(31, 27, 27);
+ text-align: right;
+ display: flex;
+}
+a{
+  text-decoration: none;
+  color: white;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  font-size: 30px;
+  margin-right: 20px;
+  }
+a:hover{
+  color: gold;
+}
+.nav span {
+margin-right: auto;
+text-decoration: none;
+  color: lab(95.59% 0.51 -0.37);
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  font-size: 20px;
+  margin-top: 5px;
+  animation: shine 3s infinite alternate;
+        }
+        /* IMAGE ANIMATION */
+        @keyframes shine{
+            from{
+                transform: translateX(-1px);
+            }
+            to{
+                transform: translateX(50px);
+            }
+}
+.nav span:hover{
+  color: gold;
+}
+        /* FOOTER */
+        footer{
+            background: black;
+            color: white;
+            text-align: center;
+            padding: 25px;
+            padding-top: 10px;
+            height: 10px;
+            border-radius: 20px;
+            line-height: 1px;
+        }
+        
+    </style>
+</head>
+<body>
+   <!--navigation link-->
+  <div class="nav">
+    <span>Call to Order: 07016348905</span>
+    <a href="shopping.html">Home</a>
+    <a href="product.html">Product</a>
+    <a href="about.html">About</a>
+    <a href="cart.html">Cart&nbsp;🛒</a>
+    </div>
+    <p>Items added to cart would be shown here</p>
+    <!-- FOOTER -->
+    <footer>
+        <p>© 2026 StarBlaiz Xpress. All Rights Reserved.</p>
+    </footer>
+</body>
+</html>

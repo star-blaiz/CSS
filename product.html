@@ -1,0 +1,568 @@
+<!DOCTYPE html>
+<html>
+    <head>
+    <title>Products</title>
+    <style>
+      body{
+          background-color: rgb(165, 159, 159);
+        }
+        .head{
+          color: blue;
+          font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+          font-size: 22px;
+          margin-top: 70px;
+          margin-bottom: 0;
+          margin-top: 40px;
+        }
+.container{
+  display:flex;
+  text-align: center;
+  gap: 10px;
+  margin-top: 2px;
+}
+.col1{
+  background-color: grey;
+  color: black;
+  height: 700px;
+  width: 33%;
+}
+.col2{
+  background-color: #d1d1d1;
+  color: black;
+  height: 700px;
+  width: 33%;
+}
+.col3{
+  background-color:grey;
+  color: black;
+  height: 700px;
+  width: 33%;
+}
+.p3 {
+  color: red;
+}
+.tv {
+  width: 150px;
+  height: auto;
+  margin-top: 20px;
+  margin-bottom: 0.19px;
+}
+.mp {
+  width: 150px;
+  height: auto;
+  margin-top: 20px;
+  margin-bottom: 0.19px;
+}
+.headset {
+  width: 150px;
+  height: auto;
+  margin-top: 20px;
+  margin-bottom: 0.19;
+}
+.p1, .p2, .p3 {
+  margin-top: 0.19px;
+  color: rgb(46, 1, 245);
+  font-size: 25px;
+  font-weight: bold;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+.features {
+  text-align: left;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  font-size: larger;
+  padding-left: 10px;
+}
+.bold{
+  font-weight: 100px;
+  color: rgb(10, 10, 10);
+  font-size: 25px;
+}
+
+.product{
+  justify-content: space-between;
+  align-items: center;
+  display: flex;
+  margin-top: 100px;
+  padding: 10px;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+.price{
+  color: blue;
+  font-size: 30px;
+  font-weight: 150px;
+}
+.cart{
+  background-color: white;
+  border-radius: 8px;
+  height: 50px;
+  border: solid;
+  border-width: 2px;
+  color: blue;
+  font-size: 25px;
+  font-weight: 150px;font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  cursor: pointer;
+}
+.cart:hover {
+  background-color: blue;
+  color: white;
+  transition: 0.15s;
+}
+.cart:active {
+  background-color: darkblue;
+  color: white;
+  transition: 0.15s;
+}
+.nav {
+ background-color: rgb(31, 27, 27);
+ text-align: right;
+ display: flex;
+ position:fixed;
+ top: 0;
+ left: 0;
+ right: 0;
+ z-index: 1000;
+}
+a{
+  text-decoration: none;
+  color: white;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  font-size: 30px;
+  margin-right: 20px;
+  }
+a:hover{
+  color: gold;
+}
+.nav span {
+margin-right: auto;
+text-decoration: none;
+  color: lab(95.59% 0.51 -0.37);
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  font-size: 20px;
+  margin-top: 5px;
+  animation: slide 3s infinite alternate;
+        }
+        /* IMAGE ANIMATION */
+        @keyframes slide{
+            from{
+                transform: translateX(-1px);
+            }
+            to{
+                transform: translateX(50px);
+            }
+}
+.nav span:hover{
+  color: gold;
+}
+.container2{
+  display: flex;
+  justify-content: justify;
+  gap: 20px;
+  flex-wrap: wrap;
+  border: 2px solid blue;
+  border-radius: 5px;
+  padding: 3px;
+  padding-left: 30px;
+  overflow: hidden;
+  background-color: whitesmoke;
+}
+.product2 {
+            background: white;
+            width: 100px;
+            height: auto;
+            border: 2px solid blue;
+            border-radius: 10px;
+            text-align: center;
+            padding: 2px;
+            animation: scroll 8s linear infinite;
+        }
+        /* IMAGE ANIMATION */
+        @keyframes scroll{
+            from{
+                transform: translateY(100%);
+            }
+            to{
+                transform: translateY(-100%);
+            }
+        }
+        .product2 img{
+          width: 50px;
+          height: 50px;
+          object-fit: contain;
+          border-radius: 5px;
+          margin-bottom: 0px;
+          margin-top: 0px;
+        }
+        .product2 h3{
+            color: blue;
+            margin: 5px 0;
+            margin-top: 0px;
+            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+            font-size: 11px;
+            text-align: center;
+        }
+        .pp {
+          margin-bottom: 0px;
+          margin-top: 0px;
+          font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+          font-size: 10px;
+        }
+        .price2 {
+          margin-bottom: 0px;
+          margin-top: 0px;
+          font-size: 15px;
+          font-weight: bold;
+          font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+        }
+        .button2 {
+          padding: 6px 12px;
+          margin-top: 5px;
+          border: 2px solid blue;
+          background: white;
+          color: blue;
+          cursor: pointer;
+          border-radius: 5px;
+          font-size: 10px;
+          font-weight: bold;
+          font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+        }
+        .button2:hover{
+          background-color: blue;
+  color: white;
+  transition: 0.15s;
+        }
+        .button2:active {
+          background-color: darkblue;
+  color: white;
+  transition: 0.15s;
+        }
+        .container3{
+  display: flex;
+  justify-content: justify;
+  gap: 20px;
+  flex-wrap: wrap;
+  border: 2px solid orangered;
+  border-radius: 5px;
+  padding: 3px;
+  overflow: hidden;
+  background-color: white;
+  width: 450px;
+  margin-left: 400px;
+}
+.product3 {
+            background: white;
+            width: 100px;
+            height: auto;
+            border: 3px solid orangered;
+            border-radius: 10px;
+            text-align: center;
+            padding: 2px;
+            animation: stand 8s linear infinite;
+        }
+        .button3 {
+          padding: 6px 12px;
+          margin-top: 5px;
+          border: 2px solid orange;
+          background: orangered;
+          color: yellow;
+          cursor: pointer;
+          border-radius: 5px;
+          font-size: 10px;
+          font-weight: bold;
+          font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+        }
+        .button3:hover{
+          background-color: yellow;
+  color: blue;
+  transition: 0.15s;
+        }
+        .button3:active {
+          background-color: orange;
+  color: white;
+  transition: 0.15s;
+        }
+        /* IMAGE ANIMATION */
+        @keyframes stand{
+            from{
+                transform: translateX(100%);
+            }
+            to{
+                transform: translateX(-100%);
+            }
+        }
+        .product3 img{
+          width: 50px;
+          height: 50px;
+          object-fit: contain;
+          border-radius: 5px;
+          margin-bottom: 0px;
+          margin-top: 0px;
+        }
+        .product3 h3{
+            color: blue;
+            margin: 5px 0;
+            margin-top: 0px;
+            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+            font-size: 11px;
+            text-align: center;
+        }
+        /*flashsales*/
+        .flash{
+          color: white;
+          font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+          font-size: 25px;
+          font-weight: bold;
+          background: orangered;
+          display: inline-block;
+          text-align: center;
+          width: 200px;
+          height: 50px;
+          margin-left: 550px;
+          border: solid white;
+          border-radius: 10px;
+          padding-top: 9px;
+          animation: shine 1s infinite alternate;
+          
+        }
+        
+        @keyframes shine{
+            from{
+                opacity: 1;
+            }
+            to{
+                opacity: 0.5;
+            }
+        }
+  /* FOOTER */
+        footer{
+            background: black;
+            color: white;
+            text-align: center;
+            padding: 20px;
+            padding-top: 5px;
+            padding-bottom: 25px;
+            margin-top: 0px;
+            height: 10px;
+            border-radius: 20px;
+            line-height: 1px;
+        }
+    </style>
+</head>
+<body>
+  <!--navigation link-->
+  <div class="nav">
+    <span>Call to Order: 07016348905</span>
+    <a href="shopping.html">Home</a>
+    <a href="product.html">Product</a>
+    <a href="about.html">About</a>
+    <a href="cart.html">Cart&nbsp;🛒</a>
+    </div>
+    <h1 class="head">Our Products</h1>
+    <div class="container">
+        <div class="col1">
+            <img src="headset.jpg" class="headset"><br><p class="p1">WIRELESS HEADSET</p>
+        <p class="features">
+          <b class="bold">FEATURES:</b><br>
+          📞 Clear Calls<br><br>
+          🔇 Noise Reduction<br><br>
+          🔋 Long-Lasting Battery<br><br>
+          😊 Comfortable to Wear<br><br>
+          💡 LED Light Design
+        </p>
+                <div class="product">
+          <span class="price">₦15,000</span>
+          <button class="cart" onclick="addcart()">Add to Cart</button>
+          <script>
+            function addcart(){
+                alert("Item added to cart successfully");
+            }
+            </script>
+        </div>
+          </div>
+        <div class="col2">
+          <img src="mp.jpeg" class="mp"><br><p class="p2">WIRELESS BLUETOOTH PLAYER</p>
+           <p class="features">
+          <b class="bold">FEATURES:</b><br>
+          🔊 High Bass Sound Quality<br><br>
+          🎤 Built-in Microphone<br><br>
+          🔋 Rechargeable Battery<br><br>
+          💾 USB/Memory Card Support<br><br>
+          📶 Wireless Bluetooth Connectivity
+          </p>
+          <div class="product">
+          <span class="price">₦20,000</span>
+          <button class="cart" onclick="addcart()">Add to Cart</button>
+          <script>
+            function addcart(){
+                alert("Item added to cart successfully");
+            }
+          </script>
+        </div>
+        </div>
+        <div class="col3">
+          <img src="tv.jpeg" class="tv">
+          <p class="p3">32 INCHES SMART TV</p>
+          <p class="features">
+          <b class="bold">FEATURES:</b><br>
+          📡 HD/Full HD/ 4K Display<br><br>
+          📱 Screen Mirroring Support<br><br>
+          🎮 Remote Control Included<br><br>
+          🔌 HDMI and USB Ports<br><br>
+          🌐 Smart TV with Internet Access
+          </p>
+          <div class="product">
+          <span class="price">₦200,000</span>
+          <button class="cart" onclick="addcart()"s>Add to Cart</button>
+          <script>
+            function addcart(){
+                alert("Item added to cart successfully");
+            }
+            </script>
+        </div>
+        </div>
+    </div>
+   <br>
+   <p class="flash">Flash Sales⚡</p>
+   <br><div class="container2">
+    <div class="product2">
+      <img src="mp.jpeg" alt="image">
+      <h3>Bluetooth Speaker</h3>
+      <p class="pp">High Performance Bluetooth Speaker</p>
+      <p class="price2">₦450,000</p>
+      <button onclick="alert('Item Added to Cart successfully!')" class="button2">Add to Cart</button>
+    </div>
+    <div class="product2">
+      <img src="tv.jpeg" alt="image">
+      <h3>32" Smart TV</h3>
+      <p class="pp">High Performance Smart TV</p>
+      <p class="price2">₦1,000,000</p>
+      <button onclick="alert('Item Added to Cart successfully!')" class="button2">Add to Cart</button>
+    </div>
+    <div class="product2">
+      <img src="hp laptop.jpg" alt="Smart TV">
+      <h3>Hp Laptop</h3>
+      <p class="pp">High Performance fast & reliable</p>
+      <p class="price2">₦1,500,000</p>
+      <button onclick="alert('Item Added to Cart successfully!')" class="button2">Add to Cart</button>
+    </div>
+    <div class="product2">
+      <img src="laptop.jpg" alt="image">
+      <h3>Laptop</h3>
+      <p class="pp">High speed performance</p>
+      <p class="price2">₦800,000</p>
+      <button onclick="alert('Item Added to Cart successfully!')" class="button2">Add to Cart</button>
+    </div>
+    <div class="product2">
+      <img src="headset.jpg" alt="image">
+      <h3>Wireless Headset</h3>
+      <p class="pp">comfortable over-ear design, long battery life</p>
+      <p class="price2">₦30,000</p>
+      <button onclick="alert('Item Added to Cart successfully!')" class="button2">Add to Cart</button>
+    </div>
+    <div class="product2">
+      <img src="iphone 15.jpeg" alt="image">
+      <h3>iPhone 15</h3>
+      <p class="pp">Dynamic Island display and premium sleek design for fast, smart & everyday use</p>
+      <p class="price2">₦800,000</p>
+      <button onclick="alert('Item Added to Cart successfully!')" class="button2">Add to Cart</button>
+    </div>
+    <div class="product2">
+      <img src="iphone 16.jpeg" alt="image">
+      <h3>iPhone16</h3>
+      <p class="pp">iPhone 16 with upgraded high-speed performance</p>
+      <p class="price2">₦1,200,000</p>
+      <button onclick="alert('Item Added to Cart successfully!')" class="button2">Add to Cart</button>
+    </div>
+    <div class="product2">
+      <img src="itel.jpeg" alt="image">
+      <h3>itel A50</h3>
+      <p class="pp">long lasting battery<br>strong durability</p>
+      <p class="price2">₦120,000</p>
+      <button onclick="alert('Item Added to Cart successfully!')" class="button2">Add to Cart</button>
+    </div>
+    <div class="product2">
+      <img src="itel p47.jpeg" alt="image">
+      <h3>itel P47</h3>
+      <p class="pp">reliable processor and clear display for calls</p>
+      <p class="price2">₦110,000</p>
+      <button onclick="alert('Item Added to Cart successfully!')" class="button2">Add to Cart</button>
+    </div>
+    <div class="product2">
+      <img src="newage.jpeg" alt="image">
+      <h3>20000mAh Newage Powerbank</h3>
+      <p class="pp">High-capacity powerbank with fast charging support</p>
+      <p class="price2">₦20,000</p>
+      <button onclick="alert('Item Added to Cart successfully!')" class="button2">Add to Cart</button>
+    </div>
+    <div class="product2">
+      <img src="powerpulse.jpeg" alt="image">
+      <h3>20000mAh A1160 Powerbank</h3>
+      <p class="pp">High-capacity powerbank with fast charging support</p>
+      <p class="price2">₦25,000</p>
+      <button onclick="alert('Item Added to Cart successfully!')" class="button2">Add to Cart</button>
+    </div>
+    <div class="product2">
+      <img src="powerpulse2.jpeg" alt="image">
+      <h3>30000mAh powerpulse Powerbank</h3>
+      <p class="pp">High-capacity powerbank with fast charging support</p>
+      <p class="price2">₦30,000</p>
+      <button onclick="alert('Item Added to Cart successfully!')" class="button2">Add to Cart</button>
+    </div>
+    <div class="product2">
+      <img src="powerbank.jpeg" alt="image">
+      <h3>20000mAh itel powerbank</h3>
+      <p class="pp">High-capacity powerbank with fast charging support and flashlight</p>
+      <p class="price2">₦28,000</p>
+      <button onclick="alert('Item Added to Cart successfully!')" class="button2">Add to Cart</button>
+    </div>
+     <div class="product2">
+      <img src="ind.jpeg" alt="image">
+      <h3>Polystar 26" Industrial Fan</h3>
+      <p class="pp">portable design for family</p>
+      <p class="price2">₦70,000</p>
+      <button onclick="alert('Item Added to Cart successfully!')" class="button2">Add to Cart</button>
+    </div>
+     <div class="product2">
+      <img src="bb.jpeg" alt="image">
+      <h3>Best Buy</h3>
+      <p class="pp">High-capacity Standing Fan</p>
+      <p class="price2">₦28,000</p>
+      <button onclick="alert('Item Added to Cart successfully!')" class="button2">Add to Cart</button>
+    </div>
+     <div class="product2">
+      <img src="ac.jpeg" alt="image">
+      <h3>Small Air Conditional</h3>
+      <p class="pp">Portable Conditioning Unit Cooler</p>
+      <p class="price2">₦60,000</p>
+      <button onclick="alert('Item Added to Cart successfully!')" class="button2">Add to Cart</button>
+    </div>
+    </div><br>
+    <p class="flash">Best Offer🕑</p>
+    <br><div class="container3">
+    <div class="product3">
+      <img src="mp.jpeg" alt="image">
+      <h3>Bluetooth Speaker</h3>
+      <p class="pp">High Performance Bluetooth Speaker</p>
+      <p class="price3">₦350,000</p>
+      <button onclick="alert('Item Added to Cart successfully!')" class="button3">Add to Cart</button>
+    </div>
+    <div class="product3">
+      <img src="tv.jpeg" alt="image">
+      <h3>32" smart tv</h3>
+      <p class="pp">High Performance Smart TV</p>
+      <p class="price3">₦900,000</p>
+      <button onclick="alert('Item Added to Cart successfully!')" class="button3">Add to Cart</button>
+    </div>
+    <div class="product3">
+      <img src="hp laptop.jpg" alt="image">
+      <h3>Hp Laptop</h3>
+      <p class="pp">High Performance fast & reliable</p>
+      <p class="price3">₦1,300,000</p>
+      <button onclick="alert('Item Added to Cart successfully!')" class="button3">Add to Cart</button>
+    </div>
+   </div><br>
+    <!-- FOOTER -->
+    <footer>
+        <p>© 2026 StarBlaiz Xpress. All Rights Reserved.</p>
+    </footer>
+</body>
+</html>

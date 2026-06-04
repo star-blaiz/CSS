@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html>
+    <head>
+    <title>StarBlaiz Xpress</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body{
+            font-family: Arial, sans-serif;
+          background-color: rgb(165, 159, 159);
+        }
+        /* NAVIGATION */
+        .nav {
+ background-color: rgb(31, 27, 27);
+ text-align: right;
+ display: flex;
+ position:fixed;
+ top: 0;
+ left: 0;
+ right: 0;
+ z-index: 1000;
+}
+a{
+  text-decoration: none;
+  color: white;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  font-size: 30px;
+  margin-right: 20px;
+  }
+a:hover{
+  color: gold;
+}
+.nav span {
+margin-right: auto;
+text-decoration: none;
+  color: lab(95.59% 0.51 -0.37);
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  font-size: 20px;
+  margin-top: 5px;
+  animation: scroll 3s infinite alternate;
+        }
+        
+        @keyframes scroll{
+            from{
+                transform: translateX(-1px);
+            }
+            to{
+                transform: translateX(50px);
+            }
+}
+.nav span:hover{
+  color: gold;
+}
+        /* HERO SECTION */
+        .hero{
+            position: relative;
+           
+            z-index: 1;
+        }
+        .hero img{
+            width: 100%;
+            height: 320px;
+             padding-top: 47px;
+            object-fit: cover;
+            display: block;
+            animation: shine 3s infinite alternate;
+        }
+        /* IMAGE ANIMATION */
+        @keyframes shine{
+            from{
+                opacity: 1;
+            }
+            to{
+                opacity: 0.4;
+            }
+        }
+        /* TEXT ON IMAGE */
+        .hero-text{
+            position: absolute;
+            top: 170%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            text-align: center;
+            color: white;
+        }
+        .hero-text h1{
+            font-size: 55px;
+            color: rgb(238, 241, 217);
+        }
+        .hero-text p{
+            margin-top: 30px;
+            font-size: 22px;
+             color: rgb(238, 241, 217);
+        }
+        /* BUTTON */
+        button{
+            margin-top: 20px;
+            padding: 12px 25px;
+            border: none;
+            border-radius: 8px;
+            background: blue;
+            color: white;
+            font-size: 18px;
+            cursor: pointer;
+        }
+        button:hover{
+            background: darkblue;
+            color: white;
+            border-radius: 30px;
+            border: solid;
+        }
+        button:active {
+            opacity: 0.8;
+            transition: 0.15s;
+        }
+        /* SERVICES SECTION */
+        .services{
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            padding: 50px;
+            flex-wrap: wrap;
+            margin-top: 1px;
+            margin-bottom: 60px;
+        }
+        .card{
+            background: white;
+            width: 250px;
+            padding: 25px;
+            border-radius: 10px;
+            text-align: center;
+            box-shadow: 0 0 10px gray;
+        }
+        .card h3{
+            margin-bottom: 10px;
+            color: blue;
+        }
+        /* FOOTER */
+        footer{
+            background: black;
+            color: white;
+            text-align: center;
+            padding: 25px;
+            padding-top: 10px;
+            height: 10px;
+            border-radius: 20px;
+        }
+    </style>
+</head>
+<body>
+    <!--navigation link-->
+  <div class="nav">
+    <span>Call to Order: 07016348905</span>
+    <a href="index.html">Home</a>
+    <a href="product.html">Product</a>
+    <a href="about.html">About</a>
+    <a href="cart.html">Cart&nbsp;🛒</a>
+    </div>
+    <!-- HERO SECTION -->
+    <div class="hero">
+        <img src="starblaiz.jpeg" alt="">
+        <div class="hero-text">
+            <a href="product.html">
+            <button>Shop Now</button>
+            </a>
+        </div>
+    </div>
+    <!-- SERVICES -->
+    <div class="services">
+        <div class="card">
+            <h3>Fast Delivery</h3>
+            <p>We deliver products quickly and safely.</p>
+        </div>
+        <div class="card">
+            <h3>Affordable Prices</h3>
+            <p>Best quality at affordable prices.</p>
+        </div>
+        <div class="card">
+            <h3>24/7 Support</h3>
+            <p>We are always available to help you.</p>
+        </div>
+    </div>
+    <!-- FOOTER -->
+    <footer>
+        <p>© 2026 StarBlaiz Xpress. All Rights Reserved.</p>
+    </footer>
+<body>
+</body>
+</html>
